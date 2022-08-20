@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3"
+    tools:context=".WeightNotes">
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:alpha=".7"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconGravity="textTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:alpha=".7"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_delete_24"
+        app:iconGravity="textTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_removelast"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="16dp"
+        android:alpha=".7"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_settings_backup_restore_24"
+        app:iconGravity="textTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tablerow2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_addnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/rb_bench"
+                android:orientation="horizontal"
+                android:paddingStart="30dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="30dp">
+
+                <RadioButton
+                    android:id="@+id/rb_bench"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="b"
+                    android:text="Bench Press"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_squat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="s"
+                    android:text="Squat"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_deadlift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="d"
+                    android:text="Deadlift"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/agirlik"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_ekle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:alpha=".7"
+                    android:text="@string/ekle"
+                    android:textSize="20sp"
+                    app:cornerRadius="30dp" />
+
+                <Button
+                    android:id="@+id/btn_iptal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:alpha=".7"
+                    android:text="@string/iptal"
+                    android:textSize="20sp"
+                    app:cornerRadius="30dp" />
+            </TableRow>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/powerto"
+            android:text="Total: ?"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bench"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/bench"
+                android:text="Bench Press\n?"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_squat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/squat"
+                android:text="Squat\n?"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_deadlift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/deadlift"
+                android:text="Deadlift\n?"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/my_row" />
+
+    </LinearLayout>
+
+    <TableRow
+
+        android:id="@+id/tablerow2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageVieww"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_baseline_calculate_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageVieww2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_baseline_book_24" />
+        </LinearLayout>
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

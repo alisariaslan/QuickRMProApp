@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name" translatable="false">QuickRM Pro</string>
+    <string name="maks">RM</string>
+    <string name="aciklama">Try different formulas for the most accurate result.\nThis application allows you to calculate the maximum weight you can lift in one go.</string>
+    <string name="agirlik">Weight (kg):</string>
+    <string name="tekrar">Reps (number):</string>
+    <string name="tema">Selected Theme</string>
+    <string name="dil">Language</string>
+    <string name="tr">Turkish</string>
+    <string name="en">English</string>
+    <string name="karanlik">Dark</string>
+    <string name="acik">Light</string>
+    <string name="app_name2">QuickRM</string>
+    <string name="ortalama">All (Average)</string>
+    <string name="url">Url redirection in progress</string>
+    <string name="darkmode">Dark Mode</string>
+    <string name="lightmode">Light Mode</string>
+    <string name="exit">exit</string>
+    <string name="nasilcalisir">how it works?</string>
+    <string name="wikiyegit">go to wiki</string>
+    <string name="aciklamaasil">In the weight section, enter the weight you have lifted, for example 100kg, and in the repeat section, enter the number of times you have lifted 100kg, for example, 5 times and press the calculate part. This application allows you to calculate the maximum weight that you can remove in one go without tiring yourself and risk-free. For example, you can lift 100 kilos 5 times in the Bench Press movement. But you have never tried your maximum. Are you wondering about the highest weight you can press in one go? Here, the program calculates the maximum weight you can lift thanks to auxiliary formulas. There are many different formulas to calculate this. You can find the most suitable one for you by testing them all.Every formula is valid for every move.</string>
+    <string name="premium">Premium - Faster - Better - Stronger</string>
+    <string name="diger">Other Apps</string>
+    <string name="ekle">Add</string>
+    <string name="iptal">Cancel</string>
+    <string name="yeniagirlik">Added new weight.</string>
+    <string name="islembasarisiz">Error!</string>
+    <string name="agirlikyaz">Please enter weight</string>
+    <string name="verilertemizlendi">The data has been cleared.</string>
+    <string name="eminmisin">Are you sure you want to clear all data?</string>
+    <string name="uyari">ATTENTION</string>
+    <string name="temizle">Clear</string>
+    <string name="ensonagirliktemizlendi">The last entered weight is cleared.</string>
+
+</resources>

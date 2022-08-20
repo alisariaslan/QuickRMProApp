@@ -1,0 +1,33 @@
+<resources>
+    <string name="maks">Maks</string>
+    <string name="aciklama">En doğru sonuç için farklı formüller deneyin.\nBu uygulama tek seferde kaldırabileceğiniz maksimum ağırlığı hesaplamanızı sağlar.</string>
+    <string name="agirlik">Ağırlık (kg):</string>
+    <string name="tekrar">Tekrar (reps):</string>
+    <string name="tema">Tema Seçimi</string>
+    <string name="dil">Dil</string>
+    <string name="tr">Türkçe</string>
+    <string name="en">İngilizce</string>
+    <string name="karanlik">Karanlık</string>
+    <string name="acik">Aydınlık</string>
+    <string name="app_name2">QuickRM</string>
+    <string name="ortalama">Tümü (Ortalaması)</string>
+    <string name="url">Url yönlendiriliyor...</string>
+    <string name="darkmode">Karanlık Mod</string>
+    <string name="lightmode">Aydınlık Mod</string>
+    <string name="exit">Çıkış</string>
+    <string name="nasilcalisir">Nasıl Çalışır?</string>
+    <string name="wikiyegit">Wiki ye Git</string>
+    <string name="aciklamaasil">Ağırlık kısmına kaldırdığınız kiloyu örneğin 100kg, tekrar kısmına ise 100kg ı kaç kere kaldırdığınızı örneğin 5 kez şeklinde giriş yapıp hesapla kısmına basın. Bu uygulama kendinizi yormadan risksiz bir şekilde tek seferde çıkarabileceğiniz maksimum ağırlığı hesaplamanıza yarar. Örneğin Bench Press hareketinde 100 kiloyu 5 kez kaldırabiliyorsunuz. Fakat hiç maksimumunuzu denemediniz. Tek seferde basabileceğiniz en yüksek ağırlığı merak ediyorsunuz. İşte program yardımcı formüller sayesinde kaldırabileceğiniz maksimum ağırlığı hesaplıyor. Bunu hesaplayabilmek için bir çok farklı formül mevcut. Kendiniz için en uygun olanını hepsini test ederek bulabilirsiniz. Her hareket için her formül geçerlidir.</string>
+    <string name="premium">Pro - Hızlı - Atik - Güçlü</string>
+    <string name="diger">Diğer Uygulamalar</string>
+    <string name="ekle">Ekle</string>
+    <string name="iptal">İptal</string>
+    <string name="yeniagirlik">Yeni ağırlık eklendi.</string>
+    <string name="islembasarisiz">Ekleme başarısız!</string>
+    <string name="agirlikyaz">Lütfen ağırlık yazın</string>
+    <string name="verilertemizlendi">Veriler temizlendi.</string>
+    <string name="eminmisin">Bütün verileri temizlemek istediğinizden emin misiniz?</string>
+    <string name="uyari">UYARI</string>
+    <string name="temizle">Temizle</string>
+    <string name="ensonagirliktemizlendi">En son girilen ağırlık temizlendi.</string>
+</resources>
